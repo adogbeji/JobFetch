@@ -37,6 +37,8 @@ body {
   background-color: #0F3460;
 }
 
+/* First Shape Divider */
+
 .custom-shape-divider-bottom-1598977662 {
     position: absolute;
     bottom: 0;
@@ -55,21 +57,129 @@ body {
 }
 
 .custom-shape-divider-bottom-1598977662 .shape-fill--1 {
-    fill: #FF0000;
+    fill: #FFDECF;
 }
 
 .navbar {
-  padding: 3% 5%;
+  padding: 1.75% 5% 3.5% 5%;
   background-color: #0F3460;
 }
 
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .navbar {
+    padding: 2.8% 5% 11% 5%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {  /* Targeting medium-screen devices */
+  .navbar {
+    padding: 2% 5% 5% 5%;
+  }
+}
+
 .navbar-brand {
-  width: 80px;
-  background-color: grey;
+  width: 75px;
+  margin-left: 3px;
+  /* background-color: grey; */
 }
 
 .navbar-brand img {
   max-width: 100%;
   height: auto;
-  width: 80px;
+  width: 75px;
+}
+
+.hamburger-icon {
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {  /* Targeting medium-screen devices */
+  .hamburger-icon {
+    transform: translateX(5px);
+  }
+}
+
+@media only screen and (max-width: 992px) {  /* Targeting small- & medium-screen devices */
+  .navbar-nav {
+    margin-top: 12px;
+  }
+
+  .navbar-nav {
+    padding-left: 10px;
+  }
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+}
+
+.nav-link:hover {
+  color: #FFFF00;
+}
+
+.middle-container--1 {
+  width: 100vw;
+  position: relative;
+  background-color: #FFDECF;
+}
+
+.custom-shape-divider-bottom-1598977662 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1598977662 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 55px;
+}
+
+.custom-shape-divider-bottom-1598977662 .shape-fill--2 {
+    fill: #FF0000;
+}
+
+.sect_a-text-container--1 {
+  width: 90%;
+  margin: auto;
+  padding: 120px 0 20px 0;
+  text-align: center;
+  /* background-color: #FF0000; */
+}
+
+.sect_a-text--1 {  /* Targeting small-screen devices & others */
+  font-family: 'IBM Plex Serif';
+  font-weight: 700;
+  font-size: 2.8rem;  /* Small-screen */
+  color: #000000;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_a-text--1 {
+    transform: translateX(-3px);
+  }
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .sect_a-text--1 {
+    font-size: 4rem;
+  }
+}
+
+.sect_a-highight {
+  text-decoration: underline solid #0000FF;
+}
+
+.sect_a-text--2 {
+  font-family: 'IBM Plex Serif';
+  color: #000000;
 }
