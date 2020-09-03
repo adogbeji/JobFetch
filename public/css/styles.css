@@ -121,6 +121,8 @@ body {
   color: #FFFF00;
 }
 
+/* Section 1 */
+
 .middle-container--1 {
   width: 100vw;
   position: relative;
@@ -145,13 +147,13 @@ body {
 }
 
 .custom-shape-divider-bottom-1598977662 .shape-fill--2 {
-    fill: #FF0000;
+    fill: #FFDECF;
 }
 
 .sect_a-text-container--1 {
   width: 90%;
   margin: auto;
-  padding: 120px 0 20px 0;
+  padding-top: 120px;
   text-align: center;
   /* background-color: #FF0000; */
 }
@@ -181,5 +183,92 @@ body {
 
 .sect_a-text--2 {
   font-family: 'IBM Plex Serif';
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.sect_a-button-container {
+  width: 90%;
+  margin: auto;
+  padding: 15px 0;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_a-button-container {
+    transform: translateX(-3px);
+  }
+}
+
+.sect_a-button-container a {  /* Enlarges buttons */
+  transform: scale(1.08);
+}
+
+.sect_a-button-container a:nth-child(2) {  /* Creates space between buttons */
+  margin-left: 6px;
+}
+
+.sect_a-button-colour--1 {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.sect_a-button-colour--1:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.sect_a-button-colour--2 {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.sect_a-button-colour--2:hover {
+  color: #FFFFFF;
+  background-color: #07689f;
+}
+
+/* Section 2 */
+
+.middle-container--2 {
+  width: 100vw;
+  position: relative;
+  background-color: #FFDECF;
+}
+
+.custom-shape-divider-bottom-1598977662 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1598977662 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 55px;
+}
+
+.custom-shape-divider-bottom-1598977662 .shape-fill--3 {
+    fill: #FF0000;
+}
+
+.sect_b-text-container--2 {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0 100px 0;
+  text-align: center;
+  /* background-color: #FF0000; */
+}
+
+.sect_b-text--1 {
+  font-family: 'IBM Plex Serif';
+  font-weight: 400;
+  font-size: 2.3rem;
   color: #000000;
 }
