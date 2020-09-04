@@ -57,7 +57,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1598977662 .shape-fill--1 {
-    fill: #FFDECF;
+    fill: #EEEEEE;
 }
 
 .navbar {
@@ -126,8 +126,10 @@ body {
 .middle-container--1 {
   width: 100vw;
   position: relative;
-  background-color: #FFDECF;
+  background-color: #EEEEEE;
 }
+
+/* Second Shape Divider */
 
 .custom-shape-divider-bottom-1598977662 {
     position: absolute;
@@ -147,7 +149,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1598977662 .shape-fill--2 {
-    fill: #FFDECF;
+    fill: #EEEEEE;
 }
 
 .sect_a-text-container--1 {
@@ -234,8 +236,10 @@ body {
 .middle-container--2 {
   width: 100vw;
   position: relative;
-  background-color: #FFDECF;
+  background-color: #EEEEEE;
 }
+
+/* Third Shape Divider */
 
 .custom-shape-divider-bottom-1598977662 {
     position: absolute;
@@ -255,20 +259,131 @@ body {
 }
 
 .custom-shape-divider-bottom-1598977662 .shape-fill--3 {
-    fill: #FF0000;
+    fill: #EEEEEE;
 }
 
 .sect_b-text-container--2 {
   width: 90%;
   margin: auto;
-  padding: 30px 0 100px 0;
+  padding: 30px 0 50px 0;
   text-align: center;
   /* background-color: #FF0000; */
 }
 
-.sect_b-text--1 {
+.sect_b-text--1 {  /* Targeting small-screen devices & others */
   font-family: 'IBM Plex Serif';
   font-weight: 400;
-  font-size: 2.3rem;
+  font-size: 1.8rem;  /* Small-screen */
   color: #000000;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_b-text--1 {
+    transform: translateX(-5px);
+  }
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .sect_b-text--1 {
+    font-size: 2.3rem;
+  }
+}
+
+/* Section 3 */
+
+.middle-container--3 {
+  width: 100vw;
+  position: relative;
+  background-color: #EEEEEE;
+}
+
+/* Fourth Shape Divider */
+
+.custom-shape-divider-bottom-1598977662 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1598977662 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 55px;
+}
+
+.custom-shape-divider-bottom-1598977662 .shape-fill--4 {
+    fill: #FFFFFF;
+}
+
+.sect_c-skills-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  /* background-color: grey; */
+}
+
+.sect_c-card--1 {
+  border: none;
+  background-color: #EEEEEE;
+}
+
+.sect_c-icon-container {
+  font-size: 2.6rem;
+  color: #0000FF;
+  display: inline-block;
+  /* background-color: grey; */
+}
+
+.sect_c-text--1 {  /* Targeting small-screen devices & others */
+  font-family: 'IBM Plex Serif';
+  font-weight: 400;
+  font-size: 1.95rem;  /* Small-screen */
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .sect_c-text--1 {
+    font-size: 2.3rem;
+  }
+}
+
+.sect_c-card--2 {
+  border: none;
+  background-color: #EEEEEE;
+}
+
+.sect_c-text--2 {  /* Targeting small-screen devices & others */
+  font-family: 'IBM Plex Serif';
+  font-weight: 400;
+  font-size: 1.95rem;  /* Small-screen */
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .sect_c-text--2 {
+    font-size: 2.3rem;
+  }
+}
+
+.sect_c-card--3 {
+  border: none;
+  background-color: #EEEEEE;
+}
+
+.sect_c-text--3 {  /* Targeting small-screen devices & others */
+  font-family: 'IBM Plex Serif';
+  font-weight: 400;
+  font-size: 1.95rem;  /* Small-screen */
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .sect_c-text--3 {
+    font-size: 2.3rem;
+  }
 }
