@@ -173,6 +173,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {  /* Targeting medium-screen devices */
+  .sect_a-text--1 {
+    transform: translateX(-3px);
+  }
+}
+
 @media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
   .sect_a-text--1 {
     font-size: 4rem;
@@ -187,6 +193,18 @@ body {
   font-family: 'IBM Plex Serif';
   font-size: 1.5rem;
   color: #000000;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_a-text--2 {
+    transform: translateX(-3px);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {  /* Targeting medium-screen devices */
+  .sect_a-text--2 {
+    transform: translateX(-3px);
+  }
 }
 
 .sect_a-button-container {
@@ -283,6 +301,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) { /* Targeting medium-screen devices */
+  .sect_b-text--1 {
+    transform: translateX(-3px);
+  }
+}
+
 @media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
   .sect_b-text--1 {
     font-size: 2.3rem;
@@ -299,7 +323,7 @@ body {
 
 /* Fourth Shape Divider */
 
-.custom-shape-divider-bottom-1598977662 {
+.home-page-sect_c-custom-shape-divider-bottom-1598977662 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -307,29 +331,38 @@ body {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    z-index: -3;
 }
 
-.custom-shape-divider-bottom-1598977662 svg {
+.home-page-sect_c-custom-shape-divider-bottom-1598977662 svg {
     position: relative;
     display: block;
     width: calc(134% + 1.3px);
     height: 55px;
 }
 
-.custom-shape-divider-bottom-1598977662 .shape-fill--4 {
-    fill: #FFFFFF;
+.home-page-sect_c-custom-shape-divider-bottom-1598977662 .shape-fill--4 {
+    fill: #EEEEEE;
 }
 
 .sect_c-skills-container {
   width: 90%;
   margin: auto;
   text-align: center;
+  padding-bottom: 40px;
   /* background-color: grey; */
 }
 
 .sect_c-card--1 {
   border: none;
   background-color: #EEEEEE;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_c-card--1 {
+    margin-bottom: 5px;
+    transform: translateX(-3px);
+  }
 }
 
 .sect_c-icon-container {
@@ -357,6 +390,12 @@ body {
   background-color: #EEEEEE;
 }
 
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_c-card--2 {
+    transform: translateX(-3px);
+  }
+}
+
 .sect_c-text--2 {  /* Targeting small-screen devices & others */
   font-family: 'IBM Plex Serif';
   font-weight: 400;
@@ -375,6 +414,12 @@ body {
   background-color: #EEEEEE;
 }
 
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_c-card--3 {
+    transform: translateX(-3px);
+  }
+}
+
 .sect_c-text--3 {  /* Targeting small-screen devices & others */
   font-family: 'IBM Plex Serif';
   font-weight: 400;
@@ -385,5 +430,24 @@ body {
 @media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
   .sect_c-text--3 {
     font-size: 2.3rem;
+  }
+}
+
+/* Section 4 */
+
+.middle-container--4 {  /* Targeting small-screen devices & others */
+  width: 100vw;
+  height: 60vh;
+  background-image: url("../Images/img-1a.jpg");  /* Small-screen*/
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #1B6CA8;  /* This colour will be used if browser cannot render background image */
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .middle-container--4 {
+    background-image: url("../images/img-1b.jpg");
   }
 }

@@ -6,6 +6,7 @@ const ejs = require("ejs");
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const saltRounds = 10;
+const axios = require("axios").default;
 const flash = require("connect-flash");
 const session = require("express-session");
 const passport = require("passport");
