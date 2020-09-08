@@ -457,7 +457,7 @@ body {
 .middle-container--5 {
   width: 100vw;
   position: relative;
-  background-color: #E4E4E4;
+  background-color: #EEEEEE;
 }
 
 /* Shape Divider */
@@ -480,7 +480,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1598977662 .shape-fill--5 {
-    fill: #FF0000;
+    fill: #EEEEEE;
 }
 
 .sect_d-text-container {
@@ -507,8 +507,14 @@ body {
 .sect_d-brand-container {
   width: 90%;
   margin: auto;
-  padding-top: 20px;
+  padding: 65px 0 60px 0;
   /* background-color: grey; */
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_d-brand-container {
+    padding-bottom: 30px;
+  }
 }
 
 .sect_d-card--1 {
@@ -539,12 +545,20 @@ body {
 
 .sect_d-img-container--2 {
   width: 130px;
+  border-radius: 10px;
 }
 
 .sect_d-img-container--2 img {
   max-width: 100%;
   height: auto;
   width: 130px;
+  border-radius: 10px
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_d-img-container--2 {
+    transform: scale(0.9) translateX(20%);
+  }
 }
 
 .sect_d-card--3 {
@@ -560,4 +574,68 @@ body {
   max-width: 100%;
   height: auto;
   width: 300px;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_d-img-container--3 {
+    transform: scale(0.65) translate(-28%, -20%);
+  }
+}
+
+/* Section 6 */
+
+.middle-container--6 {
+  width: 100vw;
+  position: relative;
+  background-color: #EEEEEE;
+}
+
+/* Shape Divider */
+
+.custom-shape-divider-bottom-1598977662 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1598977662 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 55px;
+}
+
+.custom-shape-divider-bottom-1598977662 .shape-fill--6 {
+    fill: #FF0000;
+}
+
+.sect_e-text-container--1 {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  /* background-color: #FF0000; */
+}
+
+.sect_e-text--1 {  /* Targeting small-screen devices & others */
+  font-family: 'IBM Plex Serif';
+  font-weight: 400;
+  font-size: 1.8rem;  /* Small-screen */
+  color: #000000;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_e-text--1 {
+    transform: translateX(-3px);
+  }
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .sect_e-text--1 {
+    font-size: 2.3rem;
+  }
 }
