@@ -610,7 +610,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1598977662 .shape-fill--6 {
-    fill: #FF0000;
+    fill: #FFB0B0;
 }
 
 .sect_e-text-container--1 {
@@ -747,7 +747,7 @@ body {
 .middle-container--7 {
   width: 100vw;
   position: relative;
-  background-color: #EEEEEE;
+  background-color: #FFB0B0;
 }
 
 /* Shape Divider */
@@ -771,4 +771,74 @@ body {
 
 .custom-shape-divider-bottom-1598977662 .shape-fill--7 {
     fill: #FF0000;
+}
+
+.sect_f-text-container--1 {
+  width: 90%;
+  margin: auto;
+  padding-top: 80px;
+  text-align: center;
+  /* background-color: #FF0000; */
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_f-text-container--1 {
+    padding-top: 40px;
+  }
+}
+
+.sect_f-text--1 {  /* Targeting small-screen devices & others */
+  font-family: 'IBM Plex Serif';
+  font-weight: 400;
+  font-size: 1.6rem;  /* Small-screen */
+  color: #000000;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_f-text--1 {
+    transform: translateX(-3px);
+  }
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .sect_f-text--1 {
+    font-size: 2.1rem;
+  }
+}
+
+.sect_f-card--1 {
+  border: none;
+  background-color: #FFB0B0;
+}
+
+.sect_f-text-container--2 {
+  width: 90%;
+  margin: auto;  /* NOTE: These two lines of code make text & icon align beautifully along centre */
+  text-align: center;
+}
+
+.sect_f-img-container--1 {  /* Targeting small-screen devices & others */
+  display: inline-block;
+  font-size: 3rem;  /* Small-screen */
+  color: #07689F;
+  float: left;
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .sect_f-img-container--1 {
+    font-size: 3.3rem;
+  }
+}
+
+.sect_f-text--2 {  /* Targeting small-screen devices & others */
+  font-family: 'IBM Plex Serif';
+  font-weight: 300;
+  font-size: 1rem;  /* Small-screen */
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices */
+  .sect_f-text--2 {
+    font-size: 1.2rem;
+  }
 }
