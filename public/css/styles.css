@@ -776,14 +776,14 @@ body {
 .sect_f-text-container--1 {
   width: 90%;
   margin: auto;
-  padding-top: 80px;
   text-align: center;
+  padding: 80px 0 40px 0;
   /* background-color: #FF0000; */
 }
 
 @media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
   .sect_f-text-container--1 {
-    padding-top: 40px;
+    padding: 40px 0 30px 0;
   }
 }
 
@@ -811,13 +811,19 @@ body {
   background-color: #FFB0B0;
 }
 
+@media only screen and (max-width: 600px) {  /* Targeting small-sceren devices */
+  .sect_f-card--1 {
+    transform: translateX(-3px);
+  }
+}
+
 .sect_f-text-container--2 {
   width: 90%;
   margin: auto;  /* NOTE: These two lines of code make text & icon align beautifully along centre */
   text-align: center;
 }
 
-.sect_f-img-container--1 {  /* Targeting small-screen devices & others */
+.sect_f-img-container {  /* Targeting small-screen devices & others */
   display: inline-block;
   font-size: 3rem;  /* Small-screen */
   color: #07689F;
@@ -825,7 +831,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
-  .sect_f-img-container--1 {
+  .sect_f-img-container {
     font-size: 3.3rem;
   }
 }
@@ -837,8 +843,80 @@ body {
   color: #000000;
 }
 
-@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices */
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
   .sect_f-text--2 {
+    font-size: 1.2rem;
+  }
+}
+
+.sect_f-card--2 {
+  border: none;
+  background-color: #FFB0B0;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_f-card--2 {
+    transform: translateX(-3px);
+  }
+}
+
+.sect_f-text--3 {  /* Targeting small-screen devices & others */
+  font-family: 'IBM Plex Serif';
+  font-weight: 300;
+  font-size: 1rem;  /* Small-screen */
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .sect_f-text--3 {
+    font-size: 1.2rem;
+  }
+}
+
+.sect_f-card--3 {
+  border: none;
+  background-color: #FFB0B0;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_f-card--3 {
+    transform: translateX(-3px);
+  }
+}
+
+.sect_f-text--4 {  /* Targeting small-screen devices & others */
+  font-family: 'IBM Plex Serif';
+  font-weight: 300;
+  font-size: 1rem;  /* Small-screen */
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices */
+  .sect_f-text--4 {
+    font-size: 1.2rem;
+  }
+}
+
+.sect_f-card--4 {
+  border: none;
+  background-color: #FFB0B0;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_f-card--4 {
+    transform: translateX(-3px);
+  }
+}
+
+.sect_f-text--5 {  /* Targeting small-screen devices & others */
+  font-family: 'IBM Plex Serif';
+  font-weight: 300;
+  font-size: 1rem;  /* Small-screen */
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) {
+  .sect_f-text--5 {
     font-size: 1.2rem;
   }
 }
