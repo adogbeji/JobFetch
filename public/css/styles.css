@@ -1038,6 +1038,7 @@ body {
 .middle-container--9 {
   width: 100vw;
   position: relative;
+  padding-bottom: 115px;
   background-color: #EEEEEE;
 }
 
@@ -1134,6 +1135,18 @@ body {
   background-color: #3F4441;
 }
 
+.sect_h-card--1:hover {
+  transition: 0.3s;
+  transform: scale(1.04);
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_h-card--1 {
+    margin-bottom: 10px;
+    transform: translateX(-5px);
+  }
+}
+
 .sect_h-text-img-container--2 {
   text-align: center;
 }
@@ -1176,6 +1189,18 @@ body {
   background-color: #3F4441;
 }
 
+.sect_h-card--2:hover {
+  transition: 0.3s;
+  transform: scale(1.04);
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_h-card--2 {
+    margin-bottom: 10px;
+    transform: translateX(-5px);
+  }
+}
+
 .sect_h-text-container--4 {
   margin-top: 20px;
 }
@@ -1189,4 +1214,79 @@ body {
 
 .sect_h-text-container--5 {
   margin-top: 20px;
+}
+
+.sect_h-card--3 {
+  border-radius: 0;
+  background-color: #3F4441;
+}
+
+.sect_h-card--3:hover {
+  transition: 0.3s;
+  transform: scale(1.04);
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_h-card--3 {
+    margin-bottom: 10px;
+    transform: translateX(-5px);
+  }
+}
+
+.sect_h-text-container--6 {
+  margin-top: 20px;
+}
+
+.sect_h-text--5 {
+  font-family: 'IBM Plex Serif';
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+}
+
+.sect_h-text-container--7 {
+  margin-top: 20px;
+}
+
+.sect_h-card--4 {
+  border-radius: 0;
+  background-color: #3F4441;
+}
+
+.sect_h-card--4:hover {
+  transition: 0.3s;
+  transform: scale(1.04);
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_h-card--4 {
+    margin-bottom: 10px;
+    transform: translateX(-5px);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {  /* Targeting medium-screen devices */
+  .sect_h-card--4 {
+    transform: translate(115%, -60px);
+  }
+
+  .sect_h-card--4:hover {
+    transition: 0.3s;
+    transform: translate(115%, -60px) scale(1.04);
+  }
+}
+
+.sect_h-text-container--8 {
+  margin-top: 20px;
+}
+
+.sect_h-text--6 {
+  font-family: 'IBM Plex Serif';
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+}
+
+.sect_h-text-container--9 {
+  margin-top: 25px;
 }
