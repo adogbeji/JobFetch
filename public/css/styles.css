@@ -1325,7 +1325,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1598977662 .shape-fill--9 {
-    fill: #FF0000;
+    fill: #000000;
 }
 
 .sect_i-text-container--1 {  /* Targeting small-screen devices & others */
@@ -1358,5 +1358,98 @@ body {
 @media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
   .sect_i-text--1 {
     font-size: 2.1rem;
+  }
+}
+
+.sect_i-phone-number-container {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 50px;
+  /* background-color: grey; */
+}
+
+.sect_i-card-colour {
+  border: none;
+  background-color: #EEEEEE;
+}
+
+.sect_i-img-container {
+  font-size: 2.2rem;
+  color: #0F3460;
+}
+
+@media only screen and (max-width: 600px) {  /* Targeting small-screen devices */
+  .sect_i-img-container i {
+    transform: translateX(70%);
+  }
+}
+
+.sect_i-text-container {
+  display: inline-block;
+}
+
+.sect_i-text--2 {
+  font-family: 'IBM Plex Serif';
+  font-weight: 500;
+  font-size: 2.3rem;
+  color: #0F3460;
+}
+
+/* Footer Section */
+
+.bottom-container {
+  width: 100vw;
+  padding: 20px 0 30px 0;
+  background-color: #000000;
+}
+
+.footer-column {
+  text-align: center;
+}
+
+.footer-column-header {
+  margin-bottom: 20px;
+}
+
+.footer-column p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #9D65C9;
+}
+
+.footer-column a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #FFCBCB;
+}
+
+.hr-container hr {
+  border-style: none;  /* Removes default <hr> border-style(inset) & width(1px) */
+  border-top-style: dashed;
+  border-width: 5px;
+  border-color: #FFFF00;
+  width: 100%;  /* Width is relative to parent 'hr-container' div */
+}
+
+.hr-container {
+  width: 60%;
+  margin: 40px 0;
+}
+
+.hr-container {  /* Targeting small-screen devices & others */
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {  /* Targeting medium-screen devices and up */
+  .hr-container {
+    display: none;
   }
 }

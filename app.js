@@ -48,6 +48,8 @@ mongoose.connect(db, {useNewUrlParser: true, useUnifiedTopology: true})
 // Mongoose Model
 const User = require("./models/user");
 
+// For Next Time: Build 3rd Footer Column!
+
 app.get("/", (req, res) => {
   res.render("home");
 });
